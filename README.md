@@ -7,7 +7,7 @@ We use NGSNGS (https://github.com/RAHenriksen/NGSNGS) to generate fastq or mappi
 
 # A mock mix of reads from multiple individuals 
 
-For testing the possible method of inferring the number of individuals from a metagenome.
+For tests of the possible method of inferring the number of individuals from a metagenome.
 
 I set numbers of reads 5000~15000 for each round, which generates the reads from one individual. I use Log-normal distribution(mean=3.5, variance=0.35) as the length distribution, and a fixed sequencing quality 30 for all sites. 
 
