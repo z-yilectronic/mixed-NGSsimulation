@@ -35,4 +35,4 @@ Using `ngssimulate_vcf.sh` to run it 5 times, I get five sets of reads. Then I m
 cat output_ngssim_*.fq.fq > ngssim_5ind.fq
 ```
 
-A read file of simulated mixed individuals `ngssim_5ind.fq`.
+The file of simulated mixed reads `ngssim_5ind.fq`.
