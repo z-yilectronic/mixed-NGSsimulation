@@ -27,10 +27,10 @@ The core command for generating reads:
 for i in {1..5}; do
     output="${output_base}_${i}.fq"
     reads=$((2500 + i * 2500))
-./NGSNGS/ngsngs --input $input --reads $reads --lengthdist LogNorm,3.5,0.35 --lowerlimit 30
+./NGSNGS/ngsngs
+--input $input --reads $reads --lengthdist LogNorm,3.5,0.35 --lowerlimit 30
 -circ -vcf Betula_old_subvar_$i.vcf -id 0 -seq SE --qualityscore 30
 --format fq --output $output
-
 ```
 
 With `ngssimulate_vcf.sh` running it 5 times, I get five sets of reads. Then I merged all the fastq files:
