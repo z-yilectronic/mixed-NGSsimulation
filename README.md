@@ -19,7 +19,7 @@ grep -v "^#" Betula_old_var_dp1.vcf > vars.txt
 for i in {1..5}; do cat head.txt <(shuf -n 300 vars.txt) > Betula_old_subvar_$i.vcf; done
 ```
 
-Not knowing the "true" numbers of variants in an individual, I choose 300 variants to provide a more evident difference between different individuals.
+Not knowing the "true" number of variants in an individual, I choose 300 to provide a more evident difference between different individuals.
 
 **The core command for generating reads:**
 
