@@ -1,9 +1,9 @@
-# Simulation
+# Simulation using NGSNGS
 
 Files needed: 
-`reference chloroplast genome (Betula Nana)`, `variations file e.g. vcf`
+`reference chloroplast genome (Betula consensus)`, `variations file e.g. vcf`
 
-Using NGSNGS (https://github.com/RAHenriksen/NGSNGS) to generate fastq or mapping files for simulation.
+We use NGSNGS (https://github.com/RAHenriksen/NGSNGS) to generate fastq or mapping files for simulation.
 
 # A mock mix of reads from multiple individuals 
 
