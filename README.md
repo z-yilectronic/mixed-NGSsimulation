@@ -21,7 +21,7 @@ for i in {1..5}; do cat head.txt <(shuf -n 300 vars.txt) > Betula_old_subvar_$i.
 
 Not knowing the "true" numbers of variants in an individual, I choose 300 variants to provide a more evident difference between different individuals.
 
-The core command for generating reads:
+**The core command for generating reads:**
 
 ```
 ./NGSNGS/ngsngs
@@ -30,7 +30,7 @@ The core command for generating reads:
 --format fq --output $output
 ```
 
-With `ngssimulate_vcf.sh` running it 5 times, I get five sets of reads. Then I merged all the fastq files:
+Using `ngssimulate_vcf.sh` to run it 5 times, I get five sets of reads. Then I merged all the fastq files:
 ```
 cat output_ngssim_*.fq.fq > ngssim_5ind.fq
 ```
