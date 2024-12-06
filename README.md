@@ -1,4 +1,4 @@
-# Simulation using NGSNGS
+# Simulation of aeDNA reads using NGSNGS
 
 Files needed: 
 `reference chloroplast genome (Betula consensus)`, `variations file e.g. vcf`
