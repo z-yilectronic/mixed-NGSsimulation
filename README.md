@@ -5,7 +5,7 @@ Files needed:
 
 We use NGSNGS (https://github.com/RAHenriksen/NGSNGS) to generate fastq or mapping files for simulation.
 
-# A mock mix of reads from multiple individuals 
+# A mock mix of multiple individuals 
 
 To test the possible methods of inferring the number of individuals from a metagenome.
 
