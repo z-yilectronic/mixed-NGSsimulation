@@ -14,7 +14,7 @@ We use NGSNGS (https://github.com/RAHenriksen/NGSNGS) to generate fastq or mappi
 --format fq --output $output
 ```
 
-# A mock mix of multiple individuals 
+**A mock mix of multiple individuals**
 
 To test the possible methods of inferring the number of individuals from a metagenome.
 
