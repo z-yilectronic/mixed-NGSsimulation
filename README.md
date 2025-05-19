@@ -5,6 +5,15 @@ Files needed:
 
 We use NGSNGS (https://github.com/RAHenriksen/NGSNGS) to generate fastq or mapping files for simulation.
 
+**The core command for generating reads:**
+
+```
+./NGSNGS/ngsngs
+--input $input --reads $readsnumbers --lengthdist LogNorm,3.5,0.35 --lowerlimit 30
+-circ -vcf Betula_old_subvar_$i.vcf -id 0 -seq SE --qualityscore 30
+--format fq --output $output
+```
+
 # A mock mix of multiple individuals 
 
 To test the possible methods of inferring the number of individuals from a metagenome.
@@ -21,16 +30,7 @@ for i in {1..5}; do cat head.txt <(shuf -n 300 vars.txt) > Betula_old_subvar_$i.
 
 Not knowing the "true" number of variants in an individual, I choose 300 to provide a more evident difference between individuals.
 
-**The core command for generating reads:**
-
-```
-./NGSNGS/ngsngs
---input $input --reads $readsnumbers --lengthdist LogNorm,3.5,0.35 --lowerlimit 30
--circ -vcf Betula_old_subvar_$i.vcf -id 0 -seq SE --qualityscore 30
---format fq --output $output
-```
-
-Using `ngssimulate_vcf.sh` to run it 5 times, I get five sets of reads. Then I merged all the fastq files:
+Then merge all the fastq files:
 ```
 cat output_ngssim_*.fq.fq > ngssim_5ind.fq
 ```
